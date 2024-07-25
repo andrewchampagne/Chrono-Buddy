@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5cf8f473bb.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1 class="title">Chrono Buddy</h1>
+            <h1 id="sub" class="sub">"What should we do today?"</h1>
+        
+
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="hours">00</p>
+                        <p>:</p>
+                        <p id="minutes">00</p>
+                        <p>:</p>
+                        <p id="seconds">00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-circle-play"></i></button>
+                <a id="pause" onclick="pause()" href="./"><i class="fa-solid fa-circle-pause"></i></i></a>
+            </div>
+
+
+            <div id="prompt" class="prompt">
+                <input type="text" id="myTextInput" class="input" placeholder="Enter your task here...">
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
